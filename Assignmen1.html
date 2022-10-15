@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="assignment1.css" rel="stylesheet" />
+    <link href="bootstrap-5.2.0-dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="assignment1.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="/html/">HOME</a> </li>
+                <li> <a href="/html/">PRODUCT</a> </li>
+                <li> <a href="/html/">GALLERY</a> </li>
+                <li> <a href="/html/">BLOG</a> </li>
+                <li> <a href="/html/">INVENTORY</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row mb-2 bg-light">
+          <div class="col">
+              
+              <div class="row">
+                <div class="col">
+                    <img src="Unknown.jpeg" alt="">
+                </div>
+
+                <div class="col">
+                    <p> 
+                        <h1 id="value-nama">Nama Saya</h1>
+                    </p>
+                    <h6> 
+                        Front End Designer
+                    </h6>
+
+                    <button class="Edit" onclick="openForm()"> Edit </button>
+                    <button> Resume </button>
+                </div>
+
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="row">
+                <div class="col">
+                    <p> <b> Availibity </b> <p id="Avail"> </p></p> 
+                    <p> <b> Usia </b> <p id="Usia"> </p> </p>
+                    <p> <b> Lokasi </b> <p id="Lokasi"> </p> </p>
+                    <p> <b> Pengalaman </b> <p id="Pengalaman"> </p></p>
+                    <p> <b> Email </b> <p id="Email"> </p></p>
+                </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="form-popup" id="myForm">
+            <form onsubmit="onSubmit()">
+                <div>
+                    <label class="form-label" for="formNama">Nama</label>
+                    <input class="form-control" name="formNama" placeholder="Masukkan nama anda" value="" type="text" id="formNama" />
+                </div>
+
+                <div>
+                    <label class="form-label" for="Role">Role</label>
+                    <input class="form-control" name="Role" placeholder="Front End Designer" value="" type="text" id="Role"/>
+                </div>
+                
+                <div>
+                    <label class="form-label" for="Availability">Availability</label>
+                    <input class="form-control" name="Availability" placeholder="" value="" type="text" id="Availability"/>
+                </div>
+
+                <div>
+                    <label class="form-label" for="inputUsia">Usia</label>
+                    <input class="form-control" name="inputUsia" placeholder="" value="" type="number" id="inputUsia" />
+                </div>
+        
+                <div>
+                    <label class="forml-label" for="Lokasi">Lokasi</label>
+                    <input class="form-control" name="Lokasi" placeholder="" value="" type="text" id="Lokasi"/>
+                </div>
+        
+                <div>
+                    <label class="form-label" for="Years Experience">Years Experience</label>
+                    <input class="form-control" name="Years Experience" placeholder="" value="" type="number" id="Years Experience"/>
+                </div>
+
+                <div>
+                    <label class="form-label" for="Email">Email</label>
+                    <input class="form-control" name="Email" placeholder="" value="" type="text" />
+                </div>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
